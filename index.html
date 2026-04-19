@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth scroll-pt-24">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Nexora Web | Sites que vendem</title>
+    <meta name="description" content="A Nexora Web cria sites modernos, rápidos e estratégicos para negócios que querem vender mais no digital." />
+    <link rel="icon" href="https://i.ibb.co/G4xvQRVW/Design-sem.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                blue: '#020024', // Novo fundo escuro
+                accent: '#00D4FF', // Novo destaque neon (substitui purple)
+                green: '#2ECC71',
+                gray: '#F4F6F8',
+                text: '#5F6C7B',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body.quiz-open .custom-cursor {
+        display: none !important;
+      }
+      /* Prevenir cliques nos links por baixo do cursor customizado quando hover falhar */
+      .no-custom-cursor {
+         cursor: default !important;
+      }
+      a, button {
+         cursor: pointer;
+      }
+      /* Removemos a regra global do tailwind de prender ponteiro pra usarmos pointer livre */
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-blue text-brand-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
